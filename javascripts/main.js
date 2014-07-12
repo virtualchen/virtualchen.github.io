@@ -2,8 +2,8 @@
     $.ajax({
         dataType: 'json',
         //url: 'http://www.mokoversity.com/1/post/tags/fullstack',
-        //url: 'http://booklog.io/1/post',
-        url: 'http://localhost:3000/post/list',
+        url: 'http://booklog.io/1/post',
+        //url: 'http://localhost:3000/post/list',
         success: function (data){
         	$('#postTemplate').tmpl(data.posts).appendTo('#content');
 
