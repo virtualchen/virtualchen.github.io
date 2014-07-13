@@ -11,11 +11,12 @@ function onWsMessage(message) {
    var content = $('#message');
    
    if (json.type === 'message') {
-   	//content.prepend('<p>' + json.data.message + '</p>');
-    console.log(json.data);
-    $('#chatTemplate').tmpl(json.data).appendTo('.chat');
-   }
-}
+      var data = json.data;
+      var newData = $.extend({}, data, {fromNow:1});
+     	//content.prepend('<p>' + json.data.message + '</p>');
+      console.log(newData);
+      $('#chatTemplate').tmpl(newData).appendTo('.chat');
+   }}
 
 $.fn.sendMessage = function () {
 	$(this).click(function() {

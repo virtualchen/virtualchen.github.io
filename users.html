@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="">
+	<meta name="author" content="">
+
+	<title>User list</title>
+
+	<!-- Bootstrap core CSS -->
+	<link href="stylesheets/bootstrap.min.css" rel="stylesheet">
+
+	<!-- Custom CSS for the '4 Col Portfolio' Template -->
+	<link href="stylesheets/4-col-portfolio.css" rel="stylesheet">
+
+</head>
+
+<body>
+	<script id= 'userTemplate' type="text/x-jquery-tmpl">
+	<tr>
+		<td>${Name}</td>
+		<td>${Email}</td>
+		<td>${Phone}</td>
+		<td>${Address}</td>
+	</tr>
+	</script>
+	<table class="table table-hover" id='user_list'>
+
+	</table>
+
+
+	<script src="javascripts/jquery/dist/jquery.min.js"></script>
+	<script src= 'javascripts/jquery-tmpl/jquery.tmpl.min.js'></script>
+	<script src="javascripts/bootstrap.min.js"></script>
+	<script src= 'javascripts/jquery.websocket.js'></script>
+	<script src ="javascripts/user.js"></script>
+	<script src ="javascripts/moment/min/moment.min.js"></script>
+</body>
+
+</html>
