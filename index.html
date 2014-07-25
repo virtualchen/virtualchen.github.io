@@ -15,38 +15,9 @@
 	<!-- Custom CSS for the '4 Col Portfolio' Template -->
 	<link href="stylesheets/4-col-portfolio.css" rel="stylesheet">
 
-			<!-- Open Graph data -->
-			<meta property="og:title" content="this is lulala title" />
-			<meta property="og:type" content="this is lulala article" />
-			<meta property="og:url" content=" http://www.google.com/" />
-			<meta property="og:description" content="Description Here" />
-
-
-        <meta property="og:image" content="images/IMAG3118.jpg">
-        <meta property="og:image:type" content="image/jpeg">
-        <meta property="og:image:width" content="3523">
-        <meta property="og:image:height" content="2372">
-
-        <meta property="og:image" content="images/IMAG3118.jpg">
-        <meta property="og:image:type" content="image/png">
-        <meta property="og:image:width" content="1024">
-        <meta property="og:image:height" content="1024">
-
-
 </head>
 
 <body>
-      <h1>Let me share lulala to you</h1>
-      <div>
-        <script type="text/javascript">
-              var fbhtml_url=window.location.toString();
-        </script>
-        <a onclick="window.open('http://www.facebook.com/sharer/sharer.php?u='+fbhtml_url);return false;" href="javascript:void(0);">FB分享</a>
-      <div>
-      <img src="images/IMAG3118.jpg" height="130" width="200"></img>
-
-
-	<!--
 	<nav class="navbar navbar-fixed-top navbar-inverse" role="navigation">
 		<div class="container">
 			<div class="navbar-header">
@@ -59,7 +30,7 @@
 				<a class="navbar-brand" href="http://startbootstrap.com">Start Bootstrap</a>
 			</div>
 
-
+			<!-- Collect the nav links, forms, and other content for toggling -->
 			<div class="collapse navbar-collapse navbar-ex1-collapse">
 				<ul class="nav navbar-nav">
 					<li><a href="/users.html">User</a>
@@ -70,7 +41,9 @@
 					</li>
 				</ul>
 			</div>
+			<!-- /.navbar-collapse -->
 		</div>
+		<!-- /.container -->
 	</nav>
 
 	<div class="container">
@@ -125,6 +98,16 @@
 										<button  class="btn btn-warning btn-sm" type="submit" id="submit">Send</button>
 									</span>
 								</form>
+									<!--
+									<div class="input-group">
+										<input id="btn-input" type="text" class="form-control input-sm" placeholder="Type your message here...">
+										<span class="input-group-btn">
+											<button class="btn btn-warning btn-sm" id="btn-chat">
+												Send</button>
+											</span>
+										</div>
+									</div>
+									-->
 								</div>
 							</div>
 						</div>
@@ -143,7 +126,7 @@
 									    u: $("#username").val(),
 					                },
 					            });
-
+					            
 					            return false;
 					        });
 					    };
@@ -186,7 +169,7 @@
 							<div class="innerContent" style="width:100px, height:200px"></div>
 						</div>
 					</div>
-				</script>
+				</script>    
 
 
 				<div class ='row'> <div id="content"></div> </div>
@@ -215,6 +198,7 @@
 				</div>
 
 			</div>
+			<!-- /.container -->
 
 			<div class="container">
 
@@ -229,6 +213,9 @@
 				</footer>
 
 			</div>
+			<!-- /.container -->
+
+
 
 			<hr>
 
@@ -244,7 +231,6 @@
 					initSubmitForm();
 				});
 			</script>
-			-->
 		</body>
 
 		</html>
